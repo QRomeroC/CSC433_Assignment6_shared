@@ -1,9 +1,11 @@
 Template code for A02UG
 ------------
 
-Author: {FirstName LastName} [{UA Email}]  
+Author: Aaron Posey [acposey@arizona.edu]
+		Cesar D. Quihuis-Romero [qromeroc@arizona.edu]
+  
 Course: CS433 533
-Date: May. [], 2026
+Date: Apr 30, 2026
 
 **The sample video is just a demo, please read the instructions on Overleaf carefully to implement your code.
 
@@ -13,10 +15,14 @@ Date: May. [], 2026
 * any other comments that you feel are relevant.
 
 Executing program:
-
-
+select "chose file" and select a given file. Of the 3 samples provided:
+	- smallOffice.hdr and memorial_o876.hdr work really well in both parts 2 and 3 (.4 is a good gamma value)
+	- smalldesignCenter.hdr works okay in part 2 with a low gamma of .1 , but does not render well 
+	  in part 3 (even with very low gamma values)
+selecting save in either part 2 or 3 saves a .ppm which can be opened using software (we used gimp)
 Description:
-
+part 2 uses the luminosity function and ratio outlined in spec
+part 3 uses the same steps outlined in spec and a mean/box filter for computing H(x) (high pass filter)
 
 Included files (**PLEASE ADD/UPDATE THIS LIST**):
 * images -- a folder with a collection of images to test code
