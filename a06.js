@@ -62,7 +62,7 @@ function upload() {
       //calling parseHdr from hdr.js will process the data
       hdr_data = parseHdr(file_data);
 	  adjustGamma(gammaSlider.value);
-	  adjustGammaP3(gammaSlider.value);
+	  adjustGammaP3(gammaSliderP3.value);
 	  
 	  /*
 		below was for paliminary data scouting and testing
@@ -260,7 +260,7 @@ function adjustGammaP3(gammaValue)
 			var r = src[rgbaIndex];
 			var g = src[rgbaIndex + 1];
 			var b = src[rgbaIndex + 2];
-			
+			//same L as p2
 			var currLum = (1/61)*(20.0*r + 40.0*g + b);
 			//guard against lum == 0 and trying to take the log of zero
 			if (currLum < epsilon){
